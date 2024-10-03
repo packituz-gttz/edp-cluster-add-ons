@@ -6,7 +6,7 @@ destinationServer: "in-cluster"
 # It is provided in the SSH format, indicating the username (`ci`), hostname (`git.example.com`),
 # and port (`22`) of the Git server, along with the repository path (`cluster-add-ons`).
 # repoUrl: "ssh://ci@git.example.com:22/edp-cluster-add-ons"
-repoUrl: "ssh://packituz-gttz@github.com:22/edp-cluster-add-ons"
+repoUrl: "ssh://git@github.com/packituz-gttz/edp-cluster-add-ons.git"
 
 # Specifies the target revision or branch of the Git repository that will be deployed.
 # In this case, "main" indicates that the main branch of the repository will be used for deployment.
