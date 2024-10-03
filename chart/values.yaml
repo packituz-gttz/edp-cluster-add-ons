@@ -5,7 +5,8 @@ destinationServer: "in-cluster"
 # Specifies the URL of the Git repository from which the code will be pulled for deployment.
 # It is provided in the SSH format, indicating the username (`ci`), hostname (`git.example.com`),
 # and port (`22`) of the Git server, along with the repository path (`cluster-add-ons`).
-repoUrl: "ssh://ci@git.example.com:22/cluster-add-ons"
+# repoUrl: "ssh://ci@git.example.com:22/edp-cluster-add-ons"
+repoUrl: "ssh://packituz-gttz@github.com:22/edp-cluster-add-ons"
 
 # Specifies the target revision or branch of the Git repository that will be deployed.
 # In this case, "main" indicates that the main branch of the repository will be used for deployment.
@@ -50,8 +51,8 @@ dependency-track:
   enable: false
 
 edp:
-  createNamespace: false
-  enable: false
+  createNamespace: true
+  enable: true
 
 kuberocketci-rbac:
   createNamespace: false
@@ -159,12 +160,12 @@ storage-class:
   enable: false
 
 tekton-cache:
-  createNamespace: false
-  enable: false
+  createNamespace: true
+  enable: true
 
 tekton:
-  createNamespace: false
-  enable: false
+  createNamespace: true
+  enable: true
 
 vault:
   createNamespace: false
