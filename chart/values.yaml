@@ -94,15 +94,15 @@ jaeger-operator:
   createNamespace: false
 
 keycloak:
-  createNamespace: false
+  createNamespace: true
   enable: false
 
 keycloak-postgresql:
-  createNamespace: false
+  createNamespace: true
   enable: false
 
 keycloak-operator:
-  createNamespace: false
+  createNamespace: true
   enable: false
 
 minio-operator:
