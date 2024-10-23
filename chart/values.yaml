@@ -55,8 +55,8 @@ edp:
   enable: true
 
 kuberocketci-rbac:
-  createNamespace: false
-  enable: false
+  createNamespace: true
+  enable: true
 
 external-secrets:
   createNamespace: false
@@ -82,8 +82,8 @@ harbor-ha-okd:
   enable: false
 
 ingress-nginx:
-  createNamespace: false
-  enable: false
+  createNamespace: true
+  enable: true
 
 ingress-nginx-external:
   createNamespace: false
@@ -95,15 +95,15 @@ jaeger-operator:
 
 keycloak:
   createNamespace: true
-  enable: false
+  enable: true
 
 keycloak-postgresql:
-  createNamespace: true
+  createNamespace: false
   enable: false
 
 keycloak-operator:
   createNamespace: true
-  enable: false
+  enable: true
 
 minio-operator:
   createNamespace: false
